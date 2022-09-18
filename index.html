@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== FAVICON ===============-->
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.png"
+      type="image/x-icon"
+    />
+
+    <!--=============== BOXICONS ===============-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="" />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>Responsive portfolio website Ansel</title>
+  </head>
+  <body>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav_logo">Developer-Junior</a>
+        <div class="class nav_menu">
+          <ul class="nav_list">
+            <li class="nav_item">
+              <a href="#home" class="class nav_link active-link">
+                <i class="bx bx-home-smile"></i>
+              </a>
+            </li>
+
+            <li class="nav_item">
+              <a href="#about" class="class nav_link">
+                <i class="bx bx-user-circle"></i>
+              </a>
+            </li>
+
+            <li class="nav_item">
+              <a href="#skills" class="class nav_link">
+                <i class="bx bx-code-block"></i>
+              </a>
+            </li>
+
+            <li class="nav_item">
+              <a href="#work" class="class nav_link">
+                <i class="bx bx-hard-hat"></i>
+              </a>
+            </li>
+
+            <li class="nav_item">
+              <a href="#contact" class="class nav_link">
+                <i class="bx bx-conversation"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- icono para cambiar tonos -->
+        <i class="bx bx-moon change-theme" id="theme-button"></i>
+      </nav>
+    </header>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+      <!--=============== HOME ===============-->
+      <section class="home section" id="home">
+        <div class="home_container container grid">
+          <div class="home_data">
+            <span class="home_greeting"> Hola, Mi Nombre es </span>
+            <h1 class="home_name">Samir Hadechni</h1>
+            <h3 class="home_education">Backend Developer</h3>
+            <div class="home_buttons">
+              <a
+                download=""
+                href="assets/PDF/HOJA DE VIDA SH.pdf"
+                class="button button-ghost"
+              >
+                Descargar HV
+              </a>
+              <a href="#about" class="button"> Saber Mas de Mi </a>
+            </div>
+          </div>
+          <div class="home_handle">
+            <img src="assets/img/samir.png" alt="mi imagen" class="home_img" />
+          </div>
+          <div class="home_social">
+            <a href="" class="home_social-link">
+              <i class="bx bxl-linkedin"></i>
+            </a>
+            <a href="" class="home_social-link">
+              <i class="bx bxl-github"></i>
+            </a>
+            <a href="" class="home_social-link">
+              <i class="bx bxl-discord-alt"></i>
+            </a>
+          </div>
+          <a href="#About" class="home_scroll">
+            <i class="bx bx-mouse home_scroll-icon"></i>
+            <span class="home_scroll-name">Scroll Down</span>
+          </a>
+        </div>
+      </section>
+
+      <!--=============== ABOUT ===============-->
+      <section class="about section" id="about">
+        <span class="section__subtitle"> Introduccion </span>
+        <h2 class="section__title">Sobre Mi</h2>
+
+        <div class="about_container container grid">
+          <img src="assets/img/dta.png" alt="ayuda" class="about_img" />
+          <div class="about_data">
+            <div class="about-info">
+              <div class="about_box">
+                <i class="bx bx-code-alt about_icon"></i>
+                <h3 class="about_title">Experiencia</h3>
+                <span class="about_subtitle">2 años trabajando</span>
+              </div>
+
+              <div class="about_box">
+                <i class="bx bxl-nodejs about_icon"></i>
+                <h3 class="about_title">Lenguaje</h3>
+                <span class="about_subtitle">Node Js</span>
+              </div>
+
+              <div class="about_box">
+                <i class="bx bxl-mongodb about_icon"></i>
+                <h3 class="about_title">Base de Datos</h3>
+                <span class="about_subtitle">NOSQL y SQL</span>
+              </div>
+            </div>
+            <p class="about_description">
+              Programador Backend, Me considero una persona creativa, motivada y
+              con deseo de apremder cada dia mas. Tengo dos años trabjando en el
+              Backend con Node Js ademas utilizando Frameword como Nest JS. Por
+              otra parte utilizo base de datos NOSQL y SQL.
+            </p>
+            <a href="#contact" class="button">Comunicate</a>
+          </div>
+        </div>
+      </section>
+
+      <!--=============== SKILLS ===============-->
+      <section class="skills section" id="skills">
+        <span class="section__subtitle">Mis Habilidades</span>
+        <h2 class="section__title">Fortalezas</h2>
+
+        <div class="skills_container container grid">
+          <div class="skills_content">
+            <h3 class="skills_title">Frontend Developer</h3>
+            <div class="skills-box">
+              <div class="skills_group">
+                <div class="skills_data">
+                  <i class="bx bx-ghost"></i>
+                  <div>
+                    <h3 class="skills_name">HTML</h3>
+                    <span class="skills_level">Intermedio</span>
+                  </div>
+                </div>
+
+                <div class="skills_data">
+                  <i class="bx bx-ghost"></i>
+                  <div>
+                    <h3 class="skills_name">CSS</h3>
+                    <span class="skills_level">Basico</span>
+                  </div>
+                </div>
+
+                <div class="skills_data">
+                  <i class="bx bx-ghost"></i>
+                  <div>
+                    <h3 class="skills_name">JavaScripts</h3>
+                    <span class="skills_level">Intermedio</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skills_group">
+                <div class="skills_data">
+                  <i class="bx bx-ghost"></i>
+                  <div>
+                    <h3 class="skills_name">Angular</h3>
+                    <span class="skills_level">Intermedio</span>
+                  </div>
+                </div>
+
+                <div class="skills_data">
+                  <i class="bx bx-ghost"></i>
+                  <div>
+                    <h3 class="skills_name">GIT</h3>
+                    <span class="skills_level">Basico</span>
+                  </div>
+                </div>
+
+                <div class="skills_data">
+                  <i class="bx bx-ghost"></i>
+                  <div>
+                    <h3 class="skills_name">Ionic</h3>
+                    <span class="skills_level">Basico</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills_content">
+            <h3 class="skills_title">Backend Developer</h3>
+            <div class="skills-box">
+              <div class="skills_group">
+                <div class="skills_data">
+                  <i class="bx bx-ghost"></i>
+                  <div>
+                    <h3 class="skills_name">Nodejs</h3>
+                    <span class="skills_level">Intermedio</span>
+                  </div>
+                </div>
+
+                <div class="skills_data">
+                  <i class="bx bx-ghost"></i>
+                  <div>
+                    <h3 class="skills_name">Python</h3>
+                    <span class="skills_level">Basico</span>
+                  </div>
+                </div>
+
+                <div class="skills_data">
+                  <i class="bx bx-ghost"></i>
+                  <div>
+                    <h3 class="skills_name">MongoDB</h3>
+                    <span class="skills_level">Intermedio</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skills_group">
+                <div class="skills_data">
+                  <i class="bx bx-ghost"></i>
+                  <div>
+                    <h3 class="skills_name">Nestjs</h3>
+                    <span class="skills_level">Intermedio</span>
+                  </div>
+                </div>
+
+                <div class="skills_data">
+                  <i class="bx bx-ghost"></i>
+                  <div>
+                    <h3 class="skills_name">Docker</h3>
+                    <span class="skills_level">Basico</span>
+                  </div>
+                </div>
+
+                <div class="skills_data">
+                  <i class="bx bx-ghost"></i>
+                  <div>
+                    <h3 class="skills_name">MSYQL</h3>
+                    <span class="skills_level">Basico</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--=============== SERVICES ===============-->
+      <section class="services section">
+        <span class="section__subtitle"> Mi servicio</span>
+        <h2 class="section__title">Adaptadome a miles de posibilidades</h2>
+
+        <div class="services_container container grid">
+            <div class="services_card">
+                <h3 class="services_title"> APP <br> Diseño
+                </h3>
+                <span class="services_button">
+                   Mostrar Contenido <i class='bx bx-skip-next services_icon' ></i>
+                </span>
+            </div>
+
+            <div class="services_card">
+                <h3 class="services_title"> WebSites <br> Diseño</h3>
+                <span class="services_button">
+                   Mostrar Contenido <i class='bx bx-skip-next services_icon' ></i>
+                </span>
+            </div>
+
+            <div class="services_card">
+                <h3 class="services_title">Producto <br> API </h3>
+                <span class="services_button">
+                   Mostrar Contenido <i class='bx bx-skip-next services_icon' ></i>
+                </span>
+            </div>
+        </div>
+      </section>
+
+      <!--=============== WORK ===============-->
+      <section class="work section" id="work"></section>
+
+      <!--=============== TESTIMONIALS ===============-->
+      <section class="testimonial section"></section>
+
+      <!--=============== CONTACT ===============-->
+      <section class="contact section" id="contact"></section>
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer"></footer>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src=""></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src=""></script>
+
+    <!--=============== MIXITUP FILTER ===============-->
+    <script src=""></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
