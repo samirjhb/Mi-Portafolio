@@ -204,8 +204,8 @@ img {
 /* Active link */
 .active-link{
   background:  linear-gradient(180deg,
-  hsla(var(--first-hue), var(--sat), var(--lig), 1),
-  hsla(var(--first-hue), var(--sat), var(--lig), .2)
+                hsla(var(--first-hue), var(--sat), var(--lig), 1),
+                hsla(var(--first-hue), var(--sat), var(--lig), .2)
   );
   box-shadow: 0 0 16px hsla(var(--first-hue), var(--sat), var(--lig), .4);
 
@@ -478,9 +478,71 @@ margin-bottom: 2rem;
 
 /* Services modal */
 
+.services_modal{
+  position: fixed;
+  inset: 0;
+  background-color:  hsl(var(--second-hue), 28%, 16%, .7);
+  padding: 2rem 1rem;
+  display: grid;
+  place-items: center;
+  transition: .4s;
+  z-index: var(--z-modal);
+  visibility: hidden;
+  opacity: 0;
+}
+.services_modal-content{
+  position: relative;
+  background-color: var(--body-color);
+  padding: 4.5rem 1.5rem 2.5rem;
+  border-radius: 1.5rem;
+}
+
+.services_modal-title,
+.service_modal-description{
+  text-align: center;
+}
+.services_modal-title{
+  font-size: var(--h3-font-size);
+  color: var(--first-color);
+  margin-bottom: 1rem;
+}
+
+.services_modal-description{
+  font-size: var(--small-font-size);
+  margin-bottom: 2rem;
+}
+
+.services_modal-list{
+  display: grid;
+  row-gap: .75rem;
+}
+.services_modal-item{
+  display: flex;
+  align-items: flex-start;
+  column-gap: .5rem;
+}
+.services_modal-icon{
+  font-size: 1.5rem;
+  color: var(--first-color);
+}
+.services_modal-info{
+  font-size: var(--small-font-size);
+}
+.services_modal-close{
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  font-size: 1.5rem;
+  color: var(--first-color);
+  cursor: pointer;
+}
+
 
 /*Active modal*/
-
+.active-modal{
+  opacity: 1;
+  visibility: visible;
+}
 
 /*=============== WORK ===============*/
 
@@ -496,12 +558,158 @@ margin-bottom: 2rem;
 
 /*=============== CONTACT ===============*/
 
+.contact_container{
+  row-gap:  3rem;
+  padding-bottom: 3rem;
+}
+.contact_title{
+  text-align: center;
+  font-size: var(--h3-font-size);
+  margin-bottom: 1.5rem;
+}
+
+.contact_info{
+  display: grid;
+  gap: 1rem;
+}
+.contact_card{
+  background-color: var(--container-color);
+  padding: 1rem;
+  border-radius: .75rem;
+  text-align: center;
+}
+.contact_card-icon{
+  font-size: 2rem;
+  color: var(--title-color);
+  margin-bottom: .25rem;
+}
+
+.contact_card-title,
+.contact_card-data{
+  font-size: var(--small-font-size);
+}
+
+.contact_card-title{
+  font-weight: var(--font-medium);
+}
+.contact_card-data{
+  display: block;
+  margin-bottom: .75rem;
+}
+
+.contact_button{
+  color: var(--first-color);
+  font-size: var(--small-font-size);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  column-gap: .25rem;
+}
+
+.contact_button:hover .contact_button-icon{
+  transform: translateX(.25rem);
+}
+.contact_button-icon{
+  font-size: 1rem;
+  transition: .4s;
+}
+.contact_form-div{
+  position: relative;
+  margin-bottom: 2rem;
+  height: 4rem ;
+}
+.contact_form-input{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--text-color-light);
+  background: none;
+  color: var(--text-color);
+  outline: none;
+  padding: 1.5rem;
+  border-radius: .75rem;
+  z-index: 1;
+}
+.contact_form-tag{
+  position: absolute;
+  top: -.75rem;
+  left: 1.5rem;
+  font-size: var(--small-font-size);
+  padding: .25rem;
+  background-color: var(--body-color);
+  z-index: 10;
+}
+
+.contact_form-area{
+  height: 11rem;
+}
+.contact_form-area textarea{
+  resize: none;
+}
 
 /*=============== FOOTER ===============*/
+.footer{
+  background-color: var(--first-color-alt);
+}
+.footer_container{
+  padding: 2rem 0 6rem;
+}
+.footer_title,
+.footer_link{
+  color: var(--body-color);
+}
+.footer_title{
+  text-align: center;
+  margin-bottom: 2rem;
+
+}
+.footer_list{
+  display: flex;
+  justify-content: center;
+  column-gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.footer_social{
+  display: flex;
+  justify-content: center;
+  column-gap: 1.25rem;
+}
+
+.footer_social-link{
+  background-color: var(--body-color);
+  color: var(--first-color);
+  padding: .25rem;
+  border-radius: .25rem;
+  font-size: 1rem;
+  display: inline-flex;
+}
+.footer_copy{
+  display: block;
+  margin-top: 4.5rem;
+  color: var(--container-color);
+  text-align: center;
+  font-size: var(--smaller-font-size);
+}
 
 
 /*=============== SCROLL BAR ===============*/
 
+::-webkit-scrollbar{
+  width: .6rem;
+  border-radius: .5rem;
+  background-color: hsl(var(--second-hue), 8%, 38%);
+}
+::-webkit-scrollbar-thumb{
+  border-radius: .5rem;
+  background-color: hsl(var(--second-hue), 8%, 26%);
+ 
+}
+::-webkit-scrollbar-thumb:hover{
+  background-color: hsl(var(--second-hue), 8%, 26%);
+}
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
